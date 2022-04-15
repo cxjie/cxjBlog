@@ -1,0 +1,820 @@
+2022-03-30 10:59:00.160  INFO 2684 --- [restartedMain] com.cxj.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on DESKTOP-RPBIRT3 with PID 2684 (D:\Desktop\毕设项目\cxj-blog\target\classes started by Dell in D:\Desktop\毕设项目\cxj-blog)
+2022-03-30 10:59:00.163 DEBUG 2684 --- [restartedMain] com.cxj.BlogApplication                  : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-03-30 10:59:00.163  INFO 2684 --- [restartedMain] com.cxj.BlogApplication                  : The following profiles are active: dev
+2022-03-30 10:59:00.263  INFO 2684 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-30 10:59:00.264  INFO 2684 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-30 10:59:02.462  INFO 2684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-30 10:59:02.597  INFO 2684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119 ms. Found 6 JPA repository interfaces.
+2022-03-30 10:59:04.176  INFO 2684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-30 10:59:04.186  INFO 2684 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-30 10:59:04.186  INFO 2684 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-30 10:59:04.301  INFO 2684 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-30 10:59:04.302  INFO 2684 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4037 ms
+2022-03-30 10:59:04.666  INFO 2684 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-30 10:59:04.844  INFO 2684 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-03-30 10:59:05.267  INFO 2684 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-30 10:59:05.443  INFO 2684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-30 10:59:05.768  INFO 2684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-30 10:59:05.818  INFO 2684 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-03-30 10:59:07.173  INFO 2684 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-30 10:59:07.188  INFO 2684 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-30 10:59:09.127  WARN 2684 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-30 10:59:09.545  INFO 2684 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-30 10:59:10.561  INFO 2684 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-30 10:59:10.592  INFO 2684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-30 10:59:10.654  INFO 2684 --- [restartedMain] com.cxj.BlogApplication                  : Started BlogApplication in 11.766 seconds (JVM running for 14.349)
+2022-03-30 10:59:11.311  INFO 2684 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1648347994] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-03-30 10:59:11.317  INFO 2684 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-30 10:59:11.317  INFO 2684 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-30 10:59:11.318  INFO 2684 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-30 10:59:11.377  INFO 2684 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 10:59:11.540  WARN 2684 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 10:59:11.556  WARN 2684 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 10:59:11.565  INFO 2684 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 10:59:12.757  INFO 2684 --- [http-nio-8080-exec-2] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 10:59:12.767  INFO 2684 --- [http-nio-8080-exec-2] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 11:00:57.619  INFO 12432 --- [restartedMain] com.cxj.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on DESKTOP-RPBIRT3 with PID 12432 (D:\Desktop\毕设项目\cxj-blog\target\classes started by Dell in D:\Desktop\毕设项目\cxj-blog)
+2022-03-30 11:00:57.620 DEBUG 12432 --- [restartedMain] com.cxj.BlogApplication                  : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-03-30 11:00:57.621  INFO 12432 --- [restartedMain] com.cxj.BlogApplication                  : The following profiles are active: dev
+2022-03-30 11:00:57.699  INFO 12432 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-30 11:00:57.700  INFO 12432 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-30 11:00:58.375  INFO 12432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-30 11:00:58.455  INFO 12432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 6 JPA repository interfaces.
+2022-03-30 11:00:59.202  INFO 12432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-30 11:00:59.209  INFO 12432 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-30 11:00:59.210  INFO 12432 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-30 11:00:59.300  INFO 12432 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-30 11:00:59.301  INFO 12432 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1600 ms
+2022-03-30 11:00:59.494  INFO 12432 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-30 11:00:59.556  INFO 12432 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-03-30 11:00:59.696  INFO 12432 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-30 11:00:59.774  INFO 12432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-30 11:00:59.892  INFO 12432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-30 11:00:59.907  INFO 12432 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-03-30 11:01:00.607  INFO 12432 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-30 11:01:00.614  INFO 12432 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-30 11:01:01.622  WARN 12432 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-30 11:01:01.873  INFO 12432 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-30 11:01:02.177  INFO 12432 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-30 11:01:02.210  INFO 12432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-30 11:01:02.220  INFO 12432 --- [restartedMain] com.cxj.BlogApplication                  : Started BlogApplication in 5.253 seconds (JVM running for 6.357)
+2022-03-30 11:01:23.958  INFO 12432 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1648347994] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-03-30 11:01:23.965  INFO 12432 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-30 11:01:23.966  INFO 12432 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-30 11:01:23.967  INFO 12432 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-30 11:01:24.009  INFO 12432 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 11:01:24.088  WARN 12432 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 11:01:24.098  WARN 12432 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 11:01:24.103  INFO 12432 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 11:01:24.856  INFO 12432 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 11:01:24.866  INFO 12432 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 11:02:15.981  INFO 10384 --- [restartedMain] com.cxj.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on DESKTOP-RPBIRT3 with PID 10384 (D:\Desktop\毕设项目\cxj-blog\target\classes started by Dell in D:\Desktop\毕设项目\cxj-blog)
+2022-03-30 11:02:15.983 DEBUG 10384 --- [restartedMain] com.cxj.BlogApplication                  : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-03-30 11:02:15.983  INFO 10384 --- [restartedMain] com.cxj.BlogApplication                  : The following profiles are active: dev
+2022-03-30 11:02:16.178  INFO 10384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-30 11:02:16.189  INFO 10384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-30 11:02:17.165  INFO 10384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-30 11:02:17.240  INFO 10384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 6 JPA repository interfaces.
+2022-03-30 11:02:17.988  INFO 10384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-30 11:02:17.996  INFO 10384 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-30 11:02:17.996  INFO 10384 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-30 11:02:18.080  INFO 10384 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-30 11:02:18.080  INFO 10384 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1890 ms
+2022-03-30 11:02:18.244  INFO 10384 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-30 11:02:18.302  INFO 10384 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-03-30 11:02:18.414  INFO 10384 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-30 11:02:18.517  INFO 10384 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-30 11:02:18.663  INFO 10384 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-30 11:02:18.678  INFO 10384 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-03-30 11:02:19.367  INFO 10384 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-30 11:02:19.374  INFO 10384 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-30 11:02:20.399  WARN 10384 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-30 11:02:20.667  INFO 10384 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-30 11:02:20.976  INFO 10384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-30 11:02:21.015  INFO 10384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-30 11:02:21.024  INFO 10384 --- [restartedMain] com.cxj.BlogApplication                  : Started BlogApplication in 6.227 seconds (JVM running for 9.234)
+2022-03-30 11:02:27.541  INFO 10384 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1648347994] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-03-30 11:02:27.547  INFO 10384 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-30 11:02:27.547  INFO 10384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-30 11:02:27.548  INFO 10384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-30 11:02:27.577  INFO 10384 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 11:02:27.649  WARN 10384 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 11:02:27.657  WARN 10384 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 11:02:27.662  INFO 10384 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 11:02:28.601  INFO 10384 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 11:02:28.610  INFO 10384 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 11:02:54.996  INFO 1036 --- [restartedMain] com.cxj.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on DESKTOP-RPBIRT3 with PID 1036 (D:\Desktop\毕设项目\cxj-blog\target\classes started by Dell in D:\Desktop\毕设项目\cxj-blog)
+2022-03-30 11:02:54.997 DEBUG 1036 --- [restartedMain] com.cxj.BlogApplication                  : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-03-30 11:02:54.997  INFO 1036 --- [restartedMain] com.cxj.BlogApplication                  : The following profiles are active: dev
+2022-03-30 11:02:55.037  INFO 1036 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-30 11:02:55.038  INFO 1036 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-30 11:02:55.646  INFO 1036 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-30 11:02:55.721  INFO 1036 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 6 JPA repository interfaces.
+2022-03-30 11:02:56.439  INFO 1036 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-30 11:02:56.446  INFO 1036 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-30 11:02:56.446  INFO 1036 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-30 11:02:56.535  INFO 1036 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-30 11:02:56.535  INFO 1036 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1497 ms
+2022-03-30 11:02:56.683  INFO 1036 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-30 11:02:56.723  INFO 1036 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-03-30 11:02:56.840  INFO 1036 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-30 11:02:56.921  INFO 1036 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-30 11:02:57.023  INFO 1036 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-30 11:02:57.036  INFO 1036 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-03-30 11:02:57.739  INFO 1036 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-30 11:02:57.746  INFO 1036 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-30 11:02:58.706  WARN 1036 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-30 11:02:59.003  INFO 1036 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-30 11:02:59.474  INFO 1036 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-30 11:02:59.508  INFO 1036 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-30 11:02:59.516  INFO 1036 --- [restartedMain] com.cxj.BlogApplication                  : Started BlogApplication in 5.142 seconds (JVM running for 6.704)
+2022-03-30 11:03:48.581  INFO 1036 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1648347994] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-03-30 11:03:48.588  INFO 1036 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-30 11:03:48.588  INFO 1036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-30 11:03:48.589  INFO 1036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-30 11:03:48.617  INFO 1036 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 11:03:48.687  WARN 1036 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 11:03:48.695  WARN 1036 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 11:03:48.700  INFO 1036 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 11:03:49.434  INFO 1036 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 11:03:49.440  INFO 1036 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 11:05:18.003  INFO 9040 --- [restartedMain] com.cxj.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on DESKTOP-RPBIRT3 with PID 9040 (D:\Desktop\毕设项目\cxj-blog\target\classes started by Dell in D:\Desktop\毕设项目\cxj-blog)
+2022-03-30 11:05:18.005 DEBUG 9040 --- [restartedMain] com.cxj.BlogApplication                  : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-03-30 11:05:18.005  INFO 9040 --- [restartedMain] com.cxj.BlogApplication                  : The following profiles are active: dev
+2022-03-30 11:05:18.056  INFO 9040 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-30 11:05:18.056  INFO 9040 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-30 11:05:18.612  INFO 9040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-30 11:05:18.673  INFO 9040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 6 JPA repository interfaces.
+2022-03-30 11:05:19.368  INFO 9040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-30 11:05:19.375  INFO 9040 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-30 11:05:19.376  INFO 9040 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-30 11:05:19.459  INFO 9040 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-30 11:05:19.459  INFO 9040 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1402 ms
+2022-03-30 11:05:19.594  INFO 9040 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-30 11:05:19.636  INFO 9040 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-03-30 11:05:19.742  INFO 9040 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-30 11:05:19.827  INFO 9040 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-30 11:05:19.921  INFO 9040 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-30 11:05:19.935  INFO 9040 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-03-30 11:05:20.604  INFO 9040 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-30 11:05:20.610  INFO 9040 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-30 11:05:21.623  WARN 9040 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-30 11:05:21.925  INFO 9040 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-30 11:05:22.289  INFO 9040 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-30 11:05:22.324  INFO 9040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-30 11:05:22.334  INFO 9040 --- [restartedMain] com.cxj.BlogApplication                  : Started BlogApplication in 4.901 seconds (JVM running for 6.077)
+2022-03-30 11:06:22.424  INFO 9040 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1648347994] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-03-30 11:06:22.430  INFO 9040 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-30 11:06:22.430  INFO 9040 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-30 11:06:22.431  INFO 9040 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-03-30 11:06:22.460  INFO 9040 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 11:06:22.535  WARN 9040 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 11:06:22.543  WARN 9040 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 11:06:22.550  INFO 9040 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 11:06:23.292  INFO 9040 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 11:06:23.300  INFO 9040 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 11:06:31.210  INFO 9040 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 11:06:31.224  INFO 9040 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 11:06:31.660  INFO 9040 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 11:06:31.666  INFO 9040 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 11:06:53.022  INFO 1596 --- [restartedMain] com.cxj.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on DESKTOP-RPBIRT3 with PID 1596 (D:\Desktop\毕设项目\cxj-blog\target\classes started by Dell in D:\Desktop\毕设项目\cxj-blog)
+2022-03-30 11:06:53.023 DEBUG 1596 --- [restartedMain] com.cxj.BlogApplication                  : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-03-30 11:06:53.024  INFO 1596 --- [restartedMain] com.cxj.BlogApplication                  : The following profiles are active: dev
+2022-03-30 11:06:53.077  INFO 1596 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-30 11:06:53.077  INFO 1596 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-30 11:06:53.639  INFO 1596 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-30 11:06:53.701  INFO 1596 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 6 JPA repository interfaces.
+2022-03-30 11:06:54.359  INFO 1596 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-30 11:06:54.367  INFO 1596 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-30 11:06:54.368  INFO 1596 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-30 11:06:54.451  INFO 1596 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-30 11:06:54.452  INFO 1596 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1374 ms
+2022-03-30 11:06:54.589  INFO 1596 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-30 11:06:54.628  INFO 1596 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-03-30 11:06:54.739  INFO 1596 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-30 11:06:54.820  INFO 1596 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-30 11:06:54.914  INFO 1596 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-30 11:06:54.928  INFO 1596 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-03-30 11:06:55.566  INFO 1596 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-30 11:06:55.573  INFO 1596 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-30 11:06:56.538  WARN 1596 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-30 11:06:56.790  INFO 1596 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-30 11:06:57.088  INFO 1596 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-30 11:06:57.120  INFO 1596 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-30 11:06:57.128  INFO 1596 --- [restartedMain] com.cxj.BlogApplication                  : Started BlogApplication in 4.629 seconds (JVM running for 5.737)
+2022-03-30 11:07:19.625  INFO 1596 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1648347994] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-03-30 11:07:19.630  INFO 1596 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-30 11:07:19.631  INFO 1596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-30 11:07:19.632  INFO 1596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-30 11:07:19.664  INFO 1596 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 11:07:19.741  WARN 1596 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 11:07:19.749  WARN 1596 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 11:07:19.756  INFO 1596 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 11:07:20.496  INFO 1596 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 11:07:20.501  INFO 1596 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 11:08:39.257  INFO 6924 --- [restartedMain] com.cxj.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on DESKTOP-RPBIRT3 with PID 6924 (D:\Desktop\毕设项目\cxj-blog\target\classes started by Dell in D:\Desktop\毕设项目\cxj-blog)
+2022-03-30 11:08:39.258 DEBUG 6924 --- [restartedMain] com.cxj.BlogApplication                  : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-03-30 11:08:39.258  INFO 6924 --- [restartedMain] com.cxj.BlogApplication                  : The following profiles are active: dev
+2022-03-30 11:08:39.307  INFO 6924 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-30 11:08:39.308  INFO 6924 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-30 11:08:39.921  INFO 6924 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-30 11:08:39.997  INFO 6924 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 6 JPA repository interfaces.
+2022-03-30 11:08:40.863  INFO 6924 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-30 11:08:40.873  INFO 6924 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-30 11:08:40.874  INFO 6924 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-30 11:08:40.962  INFO 6924 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-30 11:08:40.962  INFO 6924 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1654 ms
+2022-03-30 11:08:41.109  INFO 6924 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-30 11:08:41.154  INFO 6924 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-03-30 11:08:41.265  INFO 6924 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-30 11:08:41.356  INFO 6924 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-30 11:08:41.454  INFO 6924 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-30 11:08:41.468  INFO 6924 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-03-30 11:08:42.138  INFO 6924 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-30 11:08:42.145  INFO 6924 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-30 11:08:43.109  WARN 6924 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-30 11:08:43.358  INFO 6924 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-30 11:08:43.671  INFO 6924 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-30 11:08:43.704  INFO 6924 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-30 11:08:43.713  INFO 6924 --- [restartedMain] com.cxj.BlogApplication                  : Started BlogApplication in 5.061 seconds (JVM running for 6.218)
+2022-03-30 11:08:58.142  INFO 6924 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1648347994] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-03-30 11:08:58.147  INFO 6924 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-30 11:08:58.147  INFO 6924 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-30 11:08:58.148  INFO 6924 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-03-30 11:08:58.178  INFO 6924 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 11:08:58.256  WARN 6924 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 11:08:58.263  WARN 6924 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 11:08:58.269  INFO 6924 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 11:08:59.041  INFO 6924 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 11:08:59.051  INFO 6924 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 11:14:51.930  INFO 8360 --- [restartedMain] com.cxj.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on DESKTOP-RPBIRT3 with PID 8360 (D:\Desktop\毕设项目\cxj-blog\target\classes started by Dell in D:\Desktop\毕设项目\cxj-blog)
+2022-03-30 11:14:51.932 DEBUG 8360 --- [restartedMain] com.cxj.BlogApplication                  : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-03-30 11:14:51.932  INFO 8360 --- [restartedMain] com.cxj.BlogApplication                  : The following profiles are active: dev
+2022-03-30 11:14:51.993  INFO 8360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-30 11:14:51.993  INFO 8360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-30 11:14:52.599  INFO 8360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-30 11:14:52.675  INFO 8360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 6 JPA repository interfaces.
+2022-03-30 11:14:53.377  INFO 8360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-30 11:14:53.385  INFO 8360 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-30 11:14:53.385  INFO 8360 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-30 11:14:53.479  INFO 8360 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-30 11:14:53.479  INFO 8360 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1485 ms
+2022-03-30 11:14:53.618  INFO 8360 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-30 11:14:53.656  INFO 8360 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-03-30 11:14:53.768  INFO 8360 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-30 11:14:53.848  INFO 8360 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-30 11:14:53.942  INFO 8360 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-30 11:14:53.956  INFO 8360 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-03-30 11:14:54.604  INFO 8360 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-30 11:14:54.611  INFO 8360 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-30 11:14:55.575  WARN 8360 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-30 11:14:55.831  INFO 8360 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-30 11:14:56.157  INFO 8360 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-30 11:14:56.189  INFO 8360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-30 11:14:56.197  INFO 8360 --- [restartedMain] com.cxj.BlogApplication                  : Started BlogApplication in 4.888 seconds (JVM running for 6.174)
+2022-03-30 11:15:23.135  INFO 8360 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1648347994,1648610099; Hm_lpvt_6b1eb02bacb648d682681dc81149e144=1648610099] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-03-30 11:15:23.143  INFO 8360 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-30 11:15:23.144  INFO 8360 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-30 11:15:23.146  INFO 8360 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-03-30 11:15:23.180  INFO 8360 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 11:15:23.262  WARN 8360 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 11:15:23.271  WARN 8360 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 11:15:23.278  INFO 8360 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 11:15:24.062  INFO 8360 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 11:15:24.067  INFO 8360 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 11:19:57.523  WARN 8360 --- [RMI TCP Accept-0] sun.rmi.transport.tcp                    : RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51410] throws
+
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-03-30 11:19:57.965  WARN 8360 --- [RMI TCP Accept-0] sun.rmi.transport.tcp                    : RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51410] throws
+
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-03-30 11:19:59.549  WARN 8360 --- [RMI TCP Accept-0] sun.rmi.transport.tcp                    : RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51410] throws
+
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-03-30 11:20:02.020  WARN 8360 --- [RMI TCP Accept-0] sun.rmi.transport.tcp                    : RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51410] throws
+
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-03-30 11:20:06.478  WARN 8360 --- [RMI TCP Accept-0] sun.rmi.transport.tcp                    : RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51410] throws
+
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-03-30 11:20:14.928  WARN 8360 --- [RMI TCP Accept-0] sun.rmi.transport.tcp                    : RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51410] throws
+
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-03-30 11:20:31.392  WARN 8360 --- [RMI TCP Accept-0] sun.rmi.transport.tcp                    : RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51410] throws
+
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-03-30 11:21:03.856  WARN 8360 --- [RMI TCP Accept-0] sun.rmi.transport.tcp                    : RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51410] throws
+
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-03-30 11:22:08.258  WARN 8360 --- [RMI TCP Accept-0] sun.rmi.transport.tcp                    : RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=51410] throws
+
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:405)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-03-30 12:14:46.666  WARN 8360 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50m52s476ms977µs700ns).
+2022-03-30 12:16:42.139  INFO 8360 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 12:16:42.162  INFO 8360 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 12:16:42.781  INFO 8360 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 12:16:42.790  INFO 8360 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 12:17:10.226  INFO 3612 --- [restartedMain] com.cxj.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on DESKTOP-RPBIRT3 with PID 3612 (D:\Desktop\毕设项目\cxj-blog\target\classes started by Dell in D:\Desktop\毕设项目\cxj-blog)
+2022-03-30 12:17:10.228 DEBUG 3612 --- [restartedMain] com.cxj.BlogApplication                  : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-03-30 12:17:10.228  INFO 3612 --- [restartedMain] com.cxj.BlogApplication                  : The following profiles are active: dev
+2022-03-30 12:17:10.269  INFO 3612 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-30 12:17:10.270  INFO 3612 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-30 12:17:12.438  INFO 3612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-30 12:17:12.579  INFO 3612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 6 JPA repository interfaces.
+2022-03-30 12:17:14.422  INFO 3612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-30 12:17:14.456  INFO 3612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-30 12:17:14.457  INFO 3612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-30 12:17:14.619  INFO 3612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-30 12:17:14.620  INFO 3612 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4349 ms
+2022-03-30 12:17:15.100  INFO 3612 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-30 12:17:15.297  INFO 3612 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-03-30 12:17:16.035  INFO 3612 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-30 12:17:16.214  INFO 3612 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-30 12:17:16.509  INFO 3612 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-30 12:17:16.532  INFO 3612 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-03-30 12:17:18.633  INFO 3612 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-30 12:17:18.664  INFO 3612 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-30 12:17:20.315  WARN 3612 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-30 12:17:20.810  INFO 3612 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-30 12:17:21.267  INFO 3612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-30 12:17:21.304  INFO 3612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-30 12:17:21.313  INFO 3612 --- [restartedMain] com.cxj.BlogApplication                  : Started BlogApplication in 12.4 seconds (JVM running for 16.703)
+2022-03-30 12:17:35.345  INFO 3612 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1648347994,1648610099; Hm_lpvt_6b1eb02bacb648d682681dc81149e144=1648613854] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-03-30 12:17:35.353  INFO 3612 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-30 12:17:35.353  INFO 3612 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-30 12:17:35.355  INFO 3612 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-03-30 12:17:35.404  INFO 3612 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 12:17:35.542  WARN 3612 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 12:17:35.552  WARN 3612 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 12:17:35.562  INFO 3612 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 12:17:36.747  INFO 3612 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 12:17:36.757  INFO 3612 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 12:17:55.394  INFO 10160 --- [restartedMain] com.cxj.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on DESKTOP-RPBIRT3 with PID 10160 (D:\Desktop\毕设项目\cxj-blog\target\classes started by Dell in D:\Desktop\毕设项目\cxj-blog)
+2022-03-30 12:17:55.396 DEBUG 10160 --- [restartedMain] com.cxj.BlogApplication                  : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-03-30 12:17:55.396  INFO 10160 --- [restartedMain] com.cxj.BlogApplication                  : The following profiles are active: dev
+2022-03-30 12:17:55.481  INFO 10160 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-30 12:17:55.481  INFO 10160 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-30 12:17:56.660  INFO 10160 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-30 12:17:56.767  INFO 10160 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 6 JPA repository interfaces.
+2022-03-30 12:17:58.251  INFO 10160 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-30 12:17:58.266  INFO 10160 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-30 12:17:58.267  INFO 10160 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-30 12:17:58.427  INFO 10160 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-30 12:17:58.427  INFO 10160 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2944 ms
+2022-03-30 12:17:58.692  INFO 10160 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-30 12:17:58.750  INFO 10160 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-03-30 12:17:58.941  INFO 10160 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-30 12:17:59.092  INFO 10160 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-30 12:17:59.241  INFO 10160 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-30 12:17:59.265  INFO 10160 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-03-30 12:18:00.547  INFO 10160 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-30 12:18:00.561  INFO 10160 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-30 12:18:02.365  WARN 10160 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-30 12:18:02.798  INFO 10160 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-30 12:18:03.297  INFO 10160 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-30 12:18:03.356  INFO 10160 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-30 12:18:03.373  INFO 10160 --- [restartedMain] com.cxj.BlogApplication                  : Started BlogApplication in 8.826 seconds (JVM running for 10.767)
+2022-03-30 12:18:29.011  INFO 10160 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1648347994,1648610099; Hm_lpvt_6b1eb02bacb648d682681dc81149e144=1648613854] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-03-30 12:18:29.018  INFO 10160 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-30 12:18:29.018  INFO 10160 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-30 12:18:29.019  INFO 10160 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-30 12:18:29.059  INFO 10160 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 12:18:29.157  WARN 10160 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 12:18:29.167  WARN 10160 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 12:18:29.175  INFO 10160 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 12:18:30.153  INFO 10160 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 12:18:30.162  INFO 10160 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 12:18:50.079  INFO 11052 --- [restartedMain] com.cxj.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on DESKTOP-RPBIRT3 with PID 11052 (D:\Desktop\毕设项目\cxj-blog\target\classes started by Dell in D:\Desktop\毕设项目\cxj-blog)
+2022-03-30 12:18:50.080 DEBUG 11052 --- [restartedMain] com.cxj.BlogApplication                  : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-03-30 12:18:50.081  INFO 11052 --- [restartedMain] com.cxj.BlogApplication                  : The following profiles are active: dev
+2022-03-30 12:18:50.182  INFO 11052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-30 12:18:50.183  INFO 11052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-30 12:18:51.206  INFO 11052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-30 12:18:51.309  INFO 11052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 6 JPA repository interfaces.
+2022-03-30 12:18:52.290  INFO 11052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-30 12:18:52.298  INFO 11052 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-30 12:18:52.298  INFO 11052 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-30 12:18:52.401  INFO 11052 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-30 12:18:52.401  INFO 11052 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2217 ms
+2022-03-30 12:18:52.574  INFO 11052 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-30 12:18:52.629  INFO 11052 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-03-30 12:18:52.777  INFO 11052 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-30 12:18:52.887  INFO 11052 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-30 12:18:53.008  INFO 11052 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-30 12:18:53.026  INFO 11052 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-03-30 12:18:53.877  INFO 11052 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-30 12:18:53.888  INFO 11052 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-30 12:18:55.614  WARN 11052 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-30 12:18:56.015  INFO 11052 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-30 12:18:56.418  INFO 11052 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-30 12:18:56.457  INFO 11052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-30 12:18:56.467  INFO 11052 --- [restartedMain] com.cxj.BlogApplication                  : Started BlogApplication in 7.093 seconds (JVM running for 8.786)
+2022-03-30 12:18:59.349  INFO 11052 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1648347994,1648610099; Hm_lpvt_6b1eb02bacb648d682681dc81149e144=1648613854] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-03-30 12:18:59.355  INFO 11052 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-30 12:18:59.355  INFO 11052 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-30 12:18:59.356  INFO 11052 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-30 12:18:59.392  INFO 11052 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 12:18:59.486  WARN 11052 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 12:18:59.496  WARN 11052 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 12:18:59.503  INFO 11052 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 12:19:00.490  INFO 11052 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 12:19:00.500  INFO 11052 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 12:19:41.870  INFO 11052 --- [http-nio-8080-exec-2] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 12:19:41.888  INFO 11052 --- [http-nio-8080-exec-2] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 12:19:42.516  INFO 11052 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 12:19:42.524  INFO 11052 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 12:19:44.452  INFO 11052 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 12:19:44.474  INFO 11052 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 12:19:45.219  INFO 11052 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 12:19:45.226  INFO 11052 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 12:21:25.288  INFO 11052 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 12:21:25.303  INFO 11052 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 12:21:25.914  INFO 11052 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 12:21:25.919  INFO 11052 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 12:21:31.482  INFO 11052 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 12:21:31.500  INFO 11052 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 12:21:32.144  INFO 11052 --- [http-nio-8080-exec-9] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 12:21:32.151  INFO 11052 --- [http-nio-8080-exec-9] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 12:21:45.382  INFO 14064 --- [restartedMain] com.cxj.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on DESKTOP-RPBIRT3 with PID 14064 (D:\Desktop\毕设项目\cxj-blog\target\classes started by Dell in D:\Desktop\毕设项目\cxj-blog)
+2022-03-30 12:21:45.384 DEBUG 14064 --- [restartedMain] com.cxj.BlogApplication                  : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-03-30 12:21:45.385  INFO 14064 --- [restartedMain] com.cxj.BlogApplication                  : The following profiles are active: dev
+2022-03-30 12:21:45.473  INFO 14064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-30 12:21:45.473  INFO 14064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-30 12:21:46.488  INFO 14064 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-30 12:21:46.581  INFO 14064 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 6 JPA repository interfaces.
+2022-03-30 12:21:47.661  INFO 14064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-30 12:21:47.671  INFO 14064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-30 12:21:47.671  INFO 14064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-30 12:21:47.805  INFO 14064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-30 12:21:47.805  INFO 14064 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2331 ms
+2022-03-30 12:21:48.016  INFO 14064 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-30 12:21:48.068  INFO 14064 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-03-30 12:21:48.229  INFO 14064 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-30 12:21:48.336  INFO 14064 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-30 12:21:48.484  INFO 14064 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-30 12:21:48.502  INFO 14064 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-03-30 12:21:49.500  INFO 14064 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-30 12:21:49.511  INFO 14064 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-30 12:21:51.201  WARN 14064 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-30 12:21:51.600  INFO 14064 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-30 12:21:52.060  INFO 14064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-30 12:21:52.111  INFO 14064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-30 12:21:52.122  INFO 14064 --- [restartedMain] com.cxj.BlogApplication                  : Started BlogApplication in 7.784 seconds (JVM running for 9.7)
+2022-03-30 12:22:16.054  INFO 14064 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1648347994,1648610099; Hm_lpvt_6b1eb02bacb648d682681dc81149e144=1648613854] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-03-30 12:22:16.063  INFO 14064 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-30 12:22:16.063  INFO 14064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-30 12:22:16.066  INFO 14064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-03-30 12:22:16.107  INFO 14064 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 12:22:16.215  WARN 14064 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 12:22:16.227  WARN 14064 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 12:22:16.234  INFO 14064 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 12:22:17.427  INFO 14064 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 12:22:17.437  INFO 14064 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 12:22:34.144  INFO 1096 --- [restartedMain] com.cxj.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on DESKTOP-RPBIRT3 with PID 1096 (D:\Desktop\毕设项目\cxj-blog\target\classes started by Dell in D:\Desktop\毕设项目\cxj-blog)
+2022-03-30 12:22:34.146 DEBUG 1096 --- [restartedMain] com.cxj.BlogApplication                  : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-03-30 12:22:34.147  INFO 1096 --- [restartedMain] com.cxj.BlogApplication                  : The following profiles are active: dev
+2022-03-30 12:22:34.230  INFO 1096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-30 12:22:34.231  INFO 1096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-30 12:22:35.241  INFO 1096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-30 12:22:35.340  INFO 1096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 6 JPA repository interfaces.
+2022-03-30 12:22:36.483  INFO 1096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-30 12:22:36.496  INFO 1096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-30 12:22:36.496  INFO 1096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-30 12:22:36.631  INFO 1096 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-30 12:22:36.631  INFO 1096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2399 ms
+2022-03-30 12:22:36.879  INFO 1096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-30 12:22:36.936  INFO 1096 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-03-30 12:22:37.082  INFO 1096 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-30 12:22:37.186  INFO 1096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-30 12:22:37.355  INFO 1096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-30 12:22:37.372  INFO 1096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-03-30 12:22:38.335  INFO 1096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-30 12:22:38.349  INFO 1096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-30 12:22:40.013  WARN 1096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-30 12:22:40.410  INFO 1096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-30 12:22:40.845  INFO 1096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-30 12:22:40.884  INFO 1096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-30 12:22:40.896  INFO 1096 --- [restartedMain] com.cxj.BlogApplication                  : Started BlogApplication in 7.66 seconds (JVM running for 9.505)
+2022-03-30 12:22:55.705  INFO 1096 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1648347994,1648610099; Hm_lpvt_6b1eb02bacb648d682681dc81149e144=1648613854] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-03-30 12:22:55.711  INFO 1096 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-30 12:22:55.711  INFO 1096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-30 12:22:55.713  INFO 1096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-03-30 12:22:55.756  INFO 1096 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 12:22:55.893  WARN 1096 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 12:22:55.909  WARN 1096 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 12:22:55.921  INFO 1096 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 12:22:57.342  INFO 1096 --- [http-nio-8080-exec-2] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 12:22:57.352  INFO 1096 --- [http-nio-8080-exec-2] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 12:23:02.482  INFO 1096 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 12:23:02.498  INFO 1096 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 12:23:03.116  INFO 1096 --- [http-nio-8080-exec-9] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 12:23:03.124  INFO 1096 --- [http-nio-8080-exec-9] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 12:34:55.007  INFO 15900 --- [restartedMain] com.cxj.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on DESKTOP-RPBIRT3 with PID 15900 (D:\Desktop\毕设项目\cxj-blog\target\classes started by Dell in D:\Desktop\毕设项目\cxj-blog)
+2022-03-30 12:34:55.009 DEBUG 15900 --- [restartedMain] com.cxj.BlogApplication                  : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-03-30 12:34:55.010  INFO 15900 --- [restartedMain] com.cxj.BlogApplication                  : The following profiles are active: dev
+2022-03-30 12:34:55.114  INFO 15900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-30 12:34:55.114  INFO 15900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-30 12:34:56.367  INFO 15900 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-30 12:34:56.462  INFO 15900 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 6 JPA repository interfaces.
+2022-03-30 12:34:57.400  INFO 15900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-30 12:34:57.410  INFO 15900 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-30 12:34:57.410  INFO 15900 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-30 12:34:57.522  INFO 15900 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-30 12:34:57.523  INFO 15900 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2408 ms
+2022-03-30 12:34:57.711  INFO 15900 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-30 12:34:57.761  INFO 15900 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-03-30 12:34:57.903  INFO 15900 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-30 12:34:58.002  INFO 15900 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-30 12:34:58.124  INFO 15900 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-30 12:34:58.140  INFO 15900 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-03-30 12:34:59.026  INFO 15900 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-30 12:34:59.035  INFO 15900 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-30 12:35:00.687  WARN 15900 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-30 12:35:01.096  INFO 15900 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-30 12:35:01.548  INFO 15900 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-30 12:35:01.589  INFO 15900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-30 12:35:01.601  INFO 15900 --- [restartedMain] com.cxj.BlogApplication                  : Started BlogApplication in 7.766 seconds (JVM running for 10.115)
+2022-03-30 12:35:53.539  INFO 4044 --- [restartedMain] com.cxj.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on DESKTOP-RPBIRT3 with PID 4044 (D:\Desktop\毕设项目\cxj-blog\target\classes started by Dell in D:\Desktop\毕设项目\cxj-blog)
+2022-03-30 12:35:53.541 DEBUG 4044 --- [restartedMain] com.cxj.BlogApplication                  : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-03-30 12:35:53.541  INFO 4044 --- [restartedMain] com.cxj.BlogApplication                  : The following profiles are active: dev
+2022-03-30 12:35:53.617  INFO 4044 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-30 12:35:53.618  INFO 4044 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-30 12:35:54.426  INFO 4044 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-30 12:35:54.507  INFO 4044 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 6 JPA repository interfaces.
+2022-03-30 12:35:55.349  INFO 4044 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-30 12:35:55.358  INFO 4044 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-30 12:35:55.359  INFO 4044 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-30 12:35:55.456  INFO 4044 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-30 12:35:55.456  INFO 4044 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1836 ms
+2022-03-30 12:35:55.627  INFO 4044 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-30 12:35:55.680  INFO 4044 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-03-30 12:35:55.809  INFO 4044 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-30 12:35:55.907  INFO 4044 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-30 12:35:56.013  INFO 4044 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-30 12:35:56.028  INFO 4044 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-03-30 12:35:56.792  INFO 4044 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-30 12:35:56.802  INFO 4044 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-30 12:35:58.016  WARN 4044 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-30 12:35:58.328  INFO 4044 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-30 12:35:58.689  INFO 4044 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-30 12:35:58.727  INFO 4044 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-30 12:35:58.738  INFO 4044 --- [restartedMain] com.cxj.BlogApplication                  : Started BlogApplication in 6.021 seconds (JVM running for 7.699)
+2022-03-30 12:36:23.185  INFO 4044 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1648347994,1648610099; Hm_lpvt_6b1eb02bacb648d682681dc81149e144=1648614830] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-03-30 12:36:23.191  INFO 4044 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-30 12:36:23.191  INFO 4044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-30 12:36:23.192  INFO 4044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-30 12:36:23.230  INFO 4044 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 12:36:23.303  WARN 4044 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 12:36:23.315  WARN 4044 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 12:36:23.323  INFO 4044 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 12:36:24.348  INFO 4044 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 12:36:24.356  INFO 4044 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 12:37:01.134  INFO 16004 --- [restartedMain] com.cxj.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on DESKTOP-RPBIRT3 with PID 16004 (D:\Desktop\毕设项目\cxj-blog\target\classes started by Dell in D:\Desktop\毕设项目\cxj-blog)
+2022-03-30 12:37:01.136 DEBUG 16004 --- [restartedMain] com.cxj.BlogApplication                  : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-03-30 12:37:01.136  INFO 16004 --- [restartedMain] com.cxj.BlogApplication                  : The following profiles are active: dev
+2022-03-30 12:37:01.204  INFO 16004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-30 12:37:01.204  INFO 16004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-30 12:37:02.111  INFO 16004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-30 12:37:02.197  INFO 16004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 6 JPA repository interfaces.
+2022-03-30 12:37:03.130  INFO 16004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-30 12:37:03.140  INFO 16004 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-30 12:37:03.141  INFO 16004 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-30 12:37:03.263  INFO 16004 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-30 12:37:03.263  INFO 16004 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2058 ms
+2022-03-30 12:37:03.443  INFO 16004 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-30 12:37:03.492  INFO 16004 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-03-30 12:37:03.629  INFO 16004 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-30 12:37:03.734  INFO 16004 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-30 12:37:03.844  INFO 16004 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-30 12:37:03.860  INFO 16004 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-03-30 12:37:04.679  INFO 16004 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-30 12:37:04.687  INFO 16004 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-30 12:37:05.952  WARN 16004 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-30 12:37:06.263  INFO 16004 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-30 12:37:06.635  INFO 16004 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-30 12:37:06.676  INFO 16004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-30 12:37:06.687  INFO 16004 --- [restartedMain] com.cxj.BlogApplication                  : Started BlogApplication in 6.522 seconds (JVM running for 8.937)
+2022-03-30 12:37:13.416  INFO 16004 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1648347994,1648610099; Hm_lpvt_6b1eb02bacb648d682681dc81149e144=1648614830] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-03-30 12:37:13.427  INFO 16004 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-30 12:37:13.427  INFO 16004 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-30 12:37:13.428  INFO 16004 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-30 12:37:13.464  INFO 16004 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 12:37:13.554  WARN 16004 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 12:37:13.566  WARN 16004 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 12:37:13.575  INFO 16004 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 12:37:14.583  INFO 16004 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 12:37:14.590  INFO 16004 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 12:37:25.399  INFO 16004 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 12:37:25.420  INFO 16004 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 12:37:26.030  INFO 16004 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 12:37:26.040  INFO 16004 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 12:37:32.932  INFO 16004 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 12:37:32.946  INFO 16004 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 12:37:33.414  INFO 16004 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 12:37:33.422  INFO 16004 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 12:37:44.717  INFO 16004 --- [http-nio-8080-exec-2] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 12:37:44.730  INFO 16004 --- [http-nio-8080-exec-2] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 12:37:45.206  INFO 16004 --- [http-nio-8080-exec-9] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 12:37:45.210  INFO 16004 --- [http-nio-8080-exec-9] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 12:38:07.480  INFO 13236 --- [restartedMain] com.cxj.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on DESKTOP-RPBIRT3 with PID 13236 (D:\Desktop\毕设项目\cxj-blog\target\classes started by Dell in D:\Desktop\毕设项目\cxj-blog)
+2022-03-30 12:38:07.482 DEBUG 13236 --- [restartedMain] com.cxj.BlogApplication                  : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-03-30 12:38:07.483  INFO 13236 --- [restartedMain] com.cxj.BlogApplication                  : The following profiles are active: dev
+2022-03-30 12:38:07.575  INFO 13236 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-30 12:38:07.576  INFO 13236 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-30 12:38:08.457  INFO 13236 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-30 12:38:08.546  INFO 13236 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 6 JPA repository interfaces.
+2022-03-30 12:38:09.449  INFO 13236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-30 12:38:09.458  INFO 13236 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-30 12:38:09.458  INFO 13236 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-30 12:38:09.588  INFO 13236 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-30 12:38:09.589  INFO 13236 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2012 ms
+2022-03-30 12:38:09.793  INFO 13236 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-30 12:38:09.850  INFO 13236 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-03-30 12:38:10.007  INFO 13236 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-30 12:38:10.120  INFO 13236 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-30 12:38:10.263  INFO 13236 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-30 12:38:10.279  INFO 13236 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-03-30 12:38:11.121  INFO 13236 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-30 12:38:11.134  INFO 13236 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-30 12:38:12.406  WARN 13236 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-30 12:38:12.726  INFO 13236 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-30 12:38:13.122  INFO 13236 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-30 12:38:13.159  INFO 13236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-30 12:38:13.172  INFO 13236 --- [restartedMain] com.cxj.BlogApplication                  : Started BlogApplication in 6.513 seconds (JVM running for 8.76)
+2022-03-30 12:38:15.756  INFO 13236 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1648347994,1648610099; Hm_lpvt_6b1eb02bacb648d682681dc81149e144=1648614830] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-03-30 12:38:15.762  INFO 13236 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-30 12:38:15.762  INFO 13236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-30 12:38:15.763  INFO 13236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-30 12:38:15.793  INFO 13236 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 12:38:15.865  WARN 13236 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 12:38:15.874  WARN 13236 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 12:38:15.880  INFO 13236 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 12:38:16.824  INFO 13236 --- [http-nio-8080-exec-2] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 12:38:16.831  INFO 13236 --- [http-nio-8080-exec-2] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 12:38:28.926  INFO 13236 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 12:38:28.940  INFO 13236 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 12:38:32.666  INFO 13236 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 12:38:32.673  INFO 13236 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 12:39:04.492  INFO 15624 --- [restartedMain] com.cxj.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on DESKTOP-RPBIRT3 with PID 15624 (D:\Desktop\毕设项目\cxj-blog\target\classes started by Dell in D:\Desktop\毕设项目\cxj-blog)
+2022-03-30 12:39:04.494 DEBUG 15624 --- [restartedMain] com.cxj.BlogApplication                  : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-03-30 12:39:04.495  INFO 15624 --- [restartedMain] com.cxj.BlogApplication                  : The following profiles are active: dev
+2022-03-30 12:39:04.584  INFO 15624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-30 12:39:04.585  INFO 15624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-30 12:39:05.522  INFO 15624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-30 12:39:05.601  INFO 15624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 6 JPA repository interfaces.
+2022-03-30 12:39:06.543  INFO 15624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-30 12:39:06.552  INFO 15624 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-30 12:39:06.553  INFO 15624 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-30 12:39:06.669  INFO 15624 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-30 12:39:06.669  INFO 15624 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2083 ms
+2022-03-30 12:39:06.843  INFO 15624 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-30 12:39:06.894  INFO 15624 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-03-30 12:39:07.034  INFO 15624 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-30 12:39:07.130  INFO 15624 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-30 12:39:07.249  INFO 15624 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-30 12:39:07.266  INFO 15624 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-03-30 12:39:08.074  INFO 15624 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-30 12:39:08.081  INFO 15624 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-30 12:39:09.381  WARN 15624 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-30 12:39:09.704  INFO 15624 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-30 12:39:10.075  INFO 15624 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-30 12:39:10.115  INFO 15624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-30 12:39:10.126  INFO 15624 --- [restartedMain] com.cxj.BlogApplication                  : Started BlogApplication in 6.483 seconds (JVM running for 8.252)
+2022-03-30 12:39:14.214  INFO 15624 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-30 12:39:14.214  INFO 15624 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-30 12:39:14.215  INFO 15624 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-30 12:39:14.247  INFO 15624 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 12:39:14.327  WARN 15624 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 12:39:14.337  WARN 15624 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 12:39:14.343  INFO 15624 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 12:39:15.343  INFO 15624 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 12:39:15.351  INFO 15624 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 14:03:27.325  INFO 16484 --- [restartedMain] com.cxj.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on DESKTOP-RPBIRT3 with PID 16484 (D:\Desktop\毕设项目\cxj-blog\target\classes started by Dell in D:\Desktop\毕设项目\cxj-blog)
+2022-03-30 14:03:27.327 DEBUG 16484 --- [restartedMain] com.cxj.BlogApplication                  : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-03-30 14:03:27.328  INFO 16484 --- [restartedMain] com.cxj.BlogApplication                  : The following profiles are active: dev
+2022-03-30 14:03:27.424  INFO 16484 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-30 14:03:27.425  INFO 16484 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-30 14:03:28.641  INFO 16484 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-30 14:03:28.742  INFO 16484 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 6 JPA repository interfaces.
+2022-03-30 14:03:30.403  INFO 16484 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-30 14:03:30.442  INFO 16484 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-30 14:03:30.442  INFO 16484 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-30 14:03:30.633  INFO 16484 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-30 14:03:30.633  INFO 16484 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3206 ms
+2022-03-30 14:03:30.952  INFO 16484 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-30 14:03:31.097  INFO 16484 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-03-30 14:03:31.552  INFO 16484 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-30 14:03:31.732  INFO 16484 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-30 14:03:31.902  INFO 16484 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-30 14:03:31.932  INFO 16484 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-03-30 14:03:33.101  INFO 16484 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-30 14:03:33.112  INFO 16484 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-30 14:03:34.722  WARN 16484 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-30 14:03:35.312  INFO 16484 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-30 14:03:35.935  INFO 16484 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-30 14:03:35.993  INFO 16484 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-30 14:03:36.025  INFO 16484 --- [restartedMain] com.cxj.BlogApplication                  : Started BlogApplication in 9.9 seconds (JVM running for 12.066)
+2022-03-30 14:08:06.946  INFO 16484 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-30 14:08:06.946  INFO 16484 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-30 14:08:06.948  INFO 16484 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-03-30 14:08:07.065  INFO 16484 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 14:08:07.412  WARN 16484 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 14:08:07.421  WARN 16484 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 14:08:07.429  INFO 16484 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 14:08:09.865  INFO 16484 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 14:08:09.873  INFO 16484 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-30 14:55:48.908  INFO 8060 --- [restartedMain] com.cxj.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on DESKTOP-RPBIRT3 with PID 8060 (D:\Desktop\毕设项目\cxj-blog\target\classes started by Dell in D:\Desktop\毕设项目\cxj-blog)
+2022-03-30 14:55:48.909 DEBUG 8060 --- [restartedMain] com.cxj.BlogApplication                  : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-03-30 14:55:48.910  INFO 8060 --- [restartedMain] com.cxj.BlogApplication                  : The following profiles are active: dev
+2022-03-30 14:55:48.994  INFO 8060 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-30 14:55:48.994  INFO 8060 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-30 14:55:50.937  INFO 8060 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-30 14:55:51.095  INFO 8060 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131 ms. Found 6 JPA repository interfaces.
+2022-03-30 14:55:52.815  INFO 8060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-30 14:55:52.836  INFO 8060 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-30 14:55:52.836  INFO 8060 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-30 14:55:52.947  INFO 8060 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-30 14:55:52.948  INFO 8060 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3953 ms
+2022-03-30 14:55:53.308  INFO 8060 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-30 14:55:53.468  INFO 8060 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-03-30 14:55:53.840  INFO 8060 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-30 14:55:54.041  INFO 8060 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-30 14:55:54.411  INFO 8060 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-30 14:55:54.436  INFO 8060 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-03-30 14:55:55.620  INFO 8060 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-30 14:55:55.630  INFO 8060 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-30 14:55:57.297  WARN 8060 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-30 14:55:57.743  INFO 8060 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-30 14:55:58.204  INFO 8060 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-30 14:55:58.240  INFO 8060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-30 14:55:58.258  INFO 8060 --- [restartedMain] com.cxj.BlogApplication                  : Started BlogApplication in 10.483 seconds (JVM running for 13.947)
+2022-03-30 14:57:02.516  INFO 8060 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-30 14:57:02.516  INFO 8060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-30 14:57:02.522  INFO 8060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-03-30 14:57:02.593  INFO 8060 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-30 14:57:02.819  WARN 8060 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 14:57:02.845  WARN 8060 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-30 14:57:02.854  INFO 8060 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-30 14:57:04.571  INFO 8060 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-30 14:57:04.583  INFO 8060 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList

@@ -1,0 +1,474 @@
+2022-03-28 16:41:00.441  INFO 45124 --- [restartedMain] com.cxj.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on DESKTOP-RPBIRT3 with PID 45124 (D:\Desktop\毕设项目\cxj-blog\target\classes started by Dell in D:\Desktop\毕设项目\cxj-blog)
+2022-03-28 16:41:00.456 DEBUG 45124 --- [restartedMain] com.cxj.BlogApplication                  : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-03-28 16:41:00.456  INFO 45124 --- [restartedMain] com.cxj.BlogApplication                  : The following profiles are active: dev
+2022-03-28 16:41:00.581  INFO 45124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-28 16:41:00.581  INFO 45124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-28 16:41:03.612  INFO 45124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-28 16:41:03.722  INFO 45124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 6 JPA repository interfaces.
+2022-03-28 16:41:05.284  INFO 45124 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-28 16:41:05.299  INFO 45124 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-28 16:41:05.299  INFO 45124 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-28 16:41:05.502  INFO 45124 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-28 16:41:05.502  INFO 45124 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4921 ms
+2022-03-28 16:41:05.877  INFO 45124 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-28 16:41:06.096  INFO 45124 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-03-28 16:41:06.471  INFO 45124 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-28 16:41:06.643  INFO 45124 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-28 16:41:09.096 ERROR 45124 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.cxj.BlogApplication.main(BlogApplication.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:520)
+	at com.mysql.cj.protocol.a.NativeProtocol.readServerCapabilities(NativeProtocol.java:475)
+	at com.mysql.cj.protocol.a.NativeProtocol.beforeHandshake(NativeProtocol.java:362)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1367)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:133)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
+	... 54 common frames omitted
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+	at com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+	at com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:81)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:514)
+	... 60 common frames omitted
+
+2022-03-28 16:41:09.096  WARN 45124 --- [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.cxj.BlogApplication.main(BlogApplication.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:520)
+	at com.mysql.cj.protocol.a.NativeProtocol.readServerCapabilities(NativeProtocol.java:475)
+	at com.mysql.cj.protocol.a.NativeProtocol.beforeHandshake(NativeProtocol.java:362)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1367)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:133)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
+	... 54 common frames omitted
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+	at com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+	at com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:81)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:514)
+	... 60 common frames omitted
+
+2022-03-28 16:41:09.111 ERROR 45124 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2022-03-28 16:41:09.127  WARN 45124 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2022-03-28 16:41:09.127  INFO 45124 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-03-28 16:41:09.142  INFO 45124 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-03-28 16:41:09.252 ERROR 45124 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.cxj.BlogApplication.main(BlogApplication.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 21 common frames omitted
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:138)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 38 common frames omitted
+
+2022-03-28 16:42:48.217  INFO 42856 --- [restartedMain] com.cxj.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on DESKTOP-RPBIRT3 with PID 42856 (D:\Desktop\毕设项目\cxj-blog\target\classes started by Dell in D:\Desktop\毕设项目\cxj-blog)
+2022-03-28 16:42:48.218 DEBUG 42856 --- [restartedMain] com.cxj.BlogApplication                  : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-03-28 16:42:48.219  INFO 42856 --- [restartedMain] com.cxj.BlogApplication                  : The following profiles are active: dev
+2022-03-28 16:42:48.285  INFO 42856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-28 16:42:48.285  INFO 42856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-28 16:42:49.104  INFO 42856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-28 16:42:49.183  INFO 42856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 6 JPA repository interfaces.
+2022-03-28 16:42:49.870  INFO 42856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-28 16:42:49.886  INFO 42856 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-28 16:42:49.886  INFO 42856 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-03-28 16:42:49.979  INFO 42856 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-28 16:42:49.979  INFO 42856 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1693 ms
+2022-03-28 16:42:50.151  INFO 42856 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-28 16:42:50.214  INFO 42856 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-03-28 16:42:50.323  INFO 42856 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-28 16:42:50.401  INFO 42856 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-28 16:42:50.598  INFO 42856 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-28 16:42:50.679  INFO 42856 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-03-28 16:42:52.319  INFO 42856 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-28 16:42:52.335  INFO 42856 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-28 16:42:53.881  WARN 42856 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-28 16:42:54.272  INFO 42856 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-28 16:42:55.209  INFO 42856 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-28 16:42:55.272  INFO 42856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-28 16:42:55.287  INFO 42856 --- [restartedMain] com.cxj.BlogApplication                  : Started BlogApplication in 7.747 seconds (JVM running for 9.146)
+2022-03-28 16:43:25.047  INFO 42856 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1648347994] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-03-28 16:43:25.080  INFO 42856 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-28 16:43:25.081  INFO 42856 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-28 16:43:25.083  INFO 42856 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-03-28 16:43:25.175  INFO 42856 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-28 16:43:25.421  WARN 42856 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-28 16:43:25.433  WARN 42856 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-03-28 16:43:25.439  INFO 42856 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-28 16:43:26.693  INFO 42856 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:43:26.700  INFO 42856 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:45:46.954  INFO 42856 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/blog/12', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.blog', args=[12, {}]}
+2022-03-28 16:45:47.046  INFO 42856 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Result : blog
+2022-03-28 16:45:47.879  INFO 42856 --- [http-nio-8080-exec-9] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:45:47.884  INFO 42856 --- [http-nio-8080-exec-9] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:46:44.240  INFO 42856 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-28 16:46:44.260  INFO 42856 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-28 16:46:44.639  INFO 42856 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:46:44.644  INFO 42856 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:48:06.687  INFO 42856 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/blog/13', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.blog', args=[13, {}]}
+2022-03-28 16:48:06.706  INFO 42856 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : blog
+2022-03-28 16:48:07.123  INFO 42856 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:48:07.128  INFO 42856 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:48:07.256  INFO 42856 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/comments/13', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.CommentController.comments', args=[13, {}]}
+2022-03-28 16:48:07.443  INFO 42856 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Result : blog ::commentList
+2022-03-28 16:48:41.241  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2022-03-28 16:48:41.263  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Result : types
+2022-03-28 16:48:42.029  INFO 42856 --- [http-nio-8080-exec-9] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:48:42.036  INFO 42856 --- [http-nio-8080-exec-9] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:48:42.066  INFO 42856 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.TagShowController.Tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2022-03-28 16:48:42.116  INFO 42856 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Result : Tags
+2022-03-28 16:48:42.454  INFO 42856 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:48:42.458  INFO 42856 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:48:47.209  INFO 42856 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.ArchiveShowController.archives', args=[{}]}
+2022-03-28 16:48:47.350  INFO 42856 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Result : archives
+2022-03-28 16:48:47.672  INFO 42856 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:48:47.677  INFO 42856 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:48:48.490  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/Messages', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.MessageController.Message_board', args=[{}]}
+2022-03-28 16:48:48.523  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Result : message_board
+2022-03-28 16:48:48.852  INFO 42856 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:48:48.855  INFO 42856 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:48:54.734  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.AboutShowController.about', args=[]}
+2022-03-28 16:48:54.737  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Result : about
+2022-03-28 16:48:55.165  INFO 42856 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:48:55.169  INFO 42856 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:52:03.808  INFO 42856 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-28 16:52:03.821  INFO 42856 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-28 16:52:04.236  INFO 42856 --- [http-nio-8080-exec-2] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:52:04.242  INFO 42856 --- [http-nio-8080-exec-2] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:52:39.486  INFO 42856 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:52:39.492  INFO 42856 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:52:43.417  INFO 42856 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:52:43.420  INFO 42856 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:52:49.215  INFO 42856 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/blog/12', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.blog', args=[12, {}]}
+2022-03-28 16:52:49.235  INFO 42856 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Result : blog
+2022-03-28 16:52:49.636  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:52:49.641  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:52:56.234  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:52:56.238  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:52:59.663  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:52:59.666  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:53:01.141  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:53:01.144  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:53:03.432  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:53:03.436  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:53:04.379  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:53:04.383  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:53:06.598  INFO 42856 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:53:06.602  INFO 42856 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:53:59.736  INFO 42856 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2022-03-28 16:53:59.745  INFO 42856 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : types
+2022-03-28 16:54:00.152  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:54:00.155  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:54:03.591  INFO 42856 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-28 16:54:03.605  INFO 42856 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-28 16:54:03.979  INFO 42856 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:54:03.982  INFO 42856 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:54:16.891  INFO 42856 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/blog/14', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.blog', args=[14, {}]}
+2022-03-28 16:54:16.910  INFO 42856 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : blog
+2022-03-28 16:54:17.338  INFO 42856 --- [http-nio-8080-exec-2] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:54:17.341  INFO 42856 --- [http-nio-8080-exec-2] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:54:17.549  INFO 42856 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/comments/14', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.CommentController.comments', args=[14, {}]}
+2022-03-28 16:54:17.551  INFO 42856 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Result : blog ::commentList
+2022-03-28 16:54:28.756  INFO 42856 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-28 16:54:28.771  INFO 42856 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-28 16:54:29.155  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:54:29.161  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:56:07.976  INFO 42856 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/blog/12', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.blog', args=[12, {}]}
+2022-03-28 16:56:07.990  INFO 42856 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Result : blog
+2022-03-28 16:56:08.383  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:56:08.386  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:58:33.161  INFO 42856 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/blog/12', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.blog', args=[12, {}]}
+2022-03-28 16:58:33.177  INFO 42856 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Result : blog
+2022-03-28 16:58:33.599  INFO 42856 --- [http-nio-8080-exec-9] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:58:33.603  INFO 42856 --- [http-nio-8080-exec-9] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:58:42.758  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-28 16:58:42.770  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-28 16:58:43.160  INFO 42856 --- [http-nio-8080-exec-2] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:58:43.163  INFO 42856 --- [http-nio-8080-exec-2] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 16:58:47.807  INFO 42856 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-28 16:58:47.823  INFO 42856 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-28 16:58:48.268  INFO 42856 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 16:58:48.271  INFO 42856 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:00:44.667  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:00:44.671  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:01:46.728  INFO 42856 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/blog/12', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.blog', args=[12, {}]}
+2022-03-28 17:01:46.745  INFO 42856 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Result : blog
+2022-03-28 17:01:47.148  INFO 42856 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:01:47.150  INFO 42856 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:10:57.896  INFO 42856 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2022-03-28 17:10:57.912  INFO 42856 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-28 17:10:58.305  INFO 42856 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:10:58.311  INFO 42856 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:13:08.284  INFO 42856 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:13:08.287  INFO 42856 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:13:12.311  INFO 42856 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:13:12.314  INFO 42856 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:13:14.997  INFO 42856 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:13:15.000  INFO 42856 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:13:24.865  INFO 42856 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:13:24.868  INFO 42856 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:15:10.089  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/blog/12', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.blog', args=[12, {}]}
+2022-03-28 17:15:10.107  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Result : blog
+2022-03-28 17:15:10.520  INFO 42856 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:15:10.526  INFO 42856 --- [http-nio-8080-exec-1] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:15:22.758  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/blog/14', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.blog', args=[14, {}]}
+2022-03-28 17:15:22.765  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Result : blog
+2022-03-28 17:15:23.255  INFO 42856 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:15:23.258  INFO 42856 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:15:23.449  INFO 42856 --- [http-nio-8080-exec-9] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/comments/14', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.CommentController.comments', args=[14, {}]}
+2022-03-28 17:15:23.454  INFO 42856 --- [http-nio-8080-exec-9] com.cxj.aspect.LogAspect                 : Result : blog ::commentList
+2022-03-28 17:15:26.870  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.index', args=[Page request [number: 1, size 5, sort: updateTime: DESC], {}]}
+2022-03-28 17:15:26.885  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Result : index
+2022-03-28 17:15:27.296  INFO 42856 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:15:27.299  INFO 42856 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:15:29.459  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/blog/9', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.blog', args=[9, {}]}
+2022-03-28 17:15:29.479  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Result : blog
+2022-03-28 17:15:29.967  INFO 42856 --- [http-nio-8080-exec-9] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:15:29.969  INFO 42856 --- [http-nio-8080-exec-9] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:15:30.120  INFO 42856 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/comments/9', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.CommentController.comments', args=[9, {}]}
+2022-03-28 17:15:30.142  INFO 42856 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Result : blog ::commentList
+2022-03-28 17:16:18.500  INFO 42856 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2022-03-28 17:16:18.506  INFO 42856 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Result : types
+2022-03-28 17:16:18.838  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:16:18.840  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:16:23.635  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/3', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 3, {}]}
+2022-03-28 17:16:23.642  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Result : types
+2022-03-28 17:16:23.992  INFO 42856 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:16:23.997  INFO 42856 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:16:25.437  INFO 42856 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.TypeShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 1, {}]}
+2022-03-28 17:16:25.443  INFO 42856 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Result : types
+2022-03-28 17:16:25.757  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:16:25.760  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:16:31.880  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.TagShowController.Tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2022-03-28 17:16:31.887  INFO 42856 --- [http-nio-8080-exec-8] com.cxj.aspect.LogAspect                 : Result : Tags
+2022-03-28 17:16:32.220  INFO 42856 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:16:32.222  INFO 42856 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:16:34.137  INFO 42856 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/tags/1', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.TagShowController.Tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 1, {}]}
+2022-03-28 17:16:34.147  INFO 42856 --- [http-nio-8080-exec-4] com.cxj.aspect.LogAspect                 : Result : Tags
+2022-03-28 17:16:34.480  INFO 42856 --- [http-nio-8080-exec-2] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:16:34.483  INFO 42856 --- [http-nio-8080-exec-2] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:16:39.983  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/tags/1', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.TagShowController.Tags', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 1, {}]}
+2022-03-28 17:16:39.990  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Result : Tags
+2022-03-28 17:16:40.293  INFO 42856 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:16:40.295  INFO 42856 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:16:48.872  INFO 42856 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.ArchiveShowController.archives', args=[{}]}
+2022-03-28 17:16:48.881  INFO 42856 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Result : archives
+2022-03-28 17:16:49.199  INFO 42856 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:16:49.202  INFO 42856 --- [http-nio-8080-exec-10] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:16:52.229  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/Messages', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.MessageController.Message_board', args=[{}]}
+2022-03-28 17:16:52.240  INFO 42856 --- [http-nio-8080-exec-7] com.cxj.aspect.LogAspect                 : Result : message_board
+2022-03-28 17:16:52.549  INFO 42856 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:16:52.552  INFO 42856 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:16:58.164  INFO 42856 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.AboutShowController.about', args=[]}
+2022-03-28 17:16:58.164  INFO 42856 --- [http-nio-8080-exec-6] com.cxj.aspect.LogAspect                 : Result : about
+2022-03-28 17:16:58.482  INFO 42856 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:16:58.485  INFO 42856 --- [http-nio-8080-exec-3] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:17:05.484  INFO 42856 --- [http-nio-8080-exec-9] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:17:05.487  INFO 42856 --- [http-nio-8080-exec-9] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:17:08.794  INFO 42856 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:17:08.796  INFO 42856 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
+2022-03-28 17:17:09.542  INFO 42856 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.cxj.web.IndexController.newblogs', args=[{}]}
+2022-03-28 17:17:09.544  INFO 42856 --- [http-nio-8080-exec-5] com.cxj.aspect.LogAspect                 : Result : _fragments :: newblogList
